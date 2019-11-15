@@ -1,0 +1,57 @@
+spring:
+  cloud:
+    consul:
+      #consul服务器地址
+      host: 127.0.0.1
+      discovery:
+        heartbeat:
+          enabled: true
+    config:
+      server:
+        git:
+          uri: git@github.com:jack341182/config-repository.git
+          ignore-local-ssh-settings: true
+          clone-on-start: true
+          force-pull: true
+          private-key: |
+                        -----BEGIN RSA PRIVATE KEY-----
+                        MIIG4wIBAAKCAYEAq8PmIjzlOKFfTow7Jp4rdiT8WkUOmkSyRiT+D9FHm3lej/8l
+                        UpoSRi7lVrNbtuGlHDIi3fgtVsMqVkTIhRxaZXfyOFW65stg+N4t2sXXLarwuddk
+                        L79AFlQ8TW7Efk73wG4//LKhXaVlSf/gy1/JuvLBlnFMXUuSBmGFuNcIi3rH2SDO
+                        r6mOo+pbsk1NTXgByeK/CTS3qzXxN3WFeTgjpOav04OemclGI+0Fy7MhsV5JVR4K
+                        3EXapMnT04/KsAc+CuRo9eqpg4SZCSyMTNF/JvPh0D4uEG69B5a/KMVr7+HQPQPS
+                        5s7MvojTrxqzVgst20AGwbOTcwiE92TbqrUrsNlqQZjcotZfTiX8Ths7sLp3uavO
+                        qE86SBbAbgMlRD6v0XrKsBWVfQfIsoNBdE2mEPMQif2K8POdBM5Ktpd7QG6XQ4ws
+                        sRDRugfxFb9J3R1CG0XbmsmKxdWbtXR83HqhqNsLwGS7rhoXKo5VpvnT/nn1/IYv
+                        vzYcxNqGrkJmQBWVAgMBAAECggGADo3FxSblwTujKLOnG2mRgyw1Gaz6RMYHWPwv
+                        bsWrzJenFIpo7ivR2pKEqij+X2uVIuN4otgxd0WII9EmMGkrm6djJbTV5lJbQBsL
+                        RZs31U3DoeuHOKh61KmEhocZLR6hzXNKBq5YD+hAwdllgbX3ENka4BVvhAQwNkwz
+                        GWtW9QKNRm+KM8YpKOhlpqD4KNU/SYzl5PDLkz052BokGhZQpttJEKH5YUx1nfuq
+                        Xw0pkK7NheHKx8k/cnELesSXRv0F+DBJUHH47QKq6fZ7rNi7e1qupPaSdNgeWLVe
+                        LwDP0GRKSY0/08T+YUDDYdWZVJxA+rToZneV5g49bQX5TagYEpLQxtwrBcd0CrzQ
+                        KAq5St+9f0K1DdJLwCEkn2/XHzvHK71lOvLuBDLOyCP6FQzguq/h8Zh9kqG6lFi6
+                        SP+4/6dp4V3EFv6laULfLA5MvCcNE3X4XdFdgfOmmMc5puhMQWUKz4ku9l1JQr7V
+                        Les1ONLmGccBSXGqVhSWy4vK//ItAoHBANwyHKkLnJ3NvQT0/YR5+QMizLBYyaS0
+                        1bSBovpKr3VJQTvy/vQDvAvO3+E02vZd7WZ+ZZ17mYripkYd5z6ZP06hUcsp26UE
+                        EseFHAR76OPzXmXZizCW1+ArmeMgd+aXyh/KA4/1U27YaiE2b2qdzYpr/N1u2+VH
+                        H4Hn6DEc5qvgKnjWgVwKxwFWPypghllKvytSURjQlsi9/dVo6c8w4NyX6Wxfa7SP
+                        37nafCpt2yYK8fwTKZdq4dtF0FZHa8TALwKBwQDHsdBYtMIrBe0u43CSM0X2iav7
+                        7Vky8vfWNRv65HRpz28QNVKWaidSjXtEp8kO+QPVtmA2tLWOJuh0LLVH2u7jciq7
+                        0YcOZV66IVGoOkERyius+L5ZXplWxhi7RTdASkLjCfBexSnkeLejMs8h2IRpLdeJ
+                        OUvsIGzRuAYlrh8kplOtRGx2C1MmlhtDlgx45/vt67Y4rxV9VqhpnpJDFywuiUpo
+                        29gttwtR5xJLbl5b3NUKIC1d6zwH06VrFdSNcXsCgcEAkPVMeNz0Fc7DiOffnb7O
+                        d4oJRm6tEIkbxuEw8aUJLSU0lMq7nNh4iy19pTyuiVH8X2UGcE5WHmBnJfG5sjQg
+                        wRriReUge9naow62Cx2ni6lDk7lLMImdRC5v+F3/kQaMQbEz9ymB6479DzBO2NlZ
+                        3q6IoR3CFYZk75hD+1ETakMAstxD/Nv7dp3Yp4Uz7MSQZWyjhrqLCUxKNpwCkCuV
+                        XKOFP5rxxMSSfD+hTi1UAA9kjpXu44exeDDVnncWM0hxAoHAXcwgn7nvxgOXn8GG
+                        +7UHtMB/vuqCTlMfpEb36IXsRFMByOwy6aHc7IK2Fs50uwquCXELikahTK7r2r2x
+                        PJoSQVU7y1KkjFeDAgxqbYlHTRLYJvwDdLjhb4fG0Be31wPKnRfrBqi3f7BQGWDh
+                        N/WaZEj7B2KZTcUBOBSnFoXN7QoPHcCY7W1uVh6Fmd5d52CXze48fi2G+4N7wXiR
+                        HOBCiW1FPTGePgLPV14hErs5qQ52JrZseMPoQ4jfFwh++R0HAoHACtpOtXn316b/
+                        CcVYvXt3VvznVBnfJHytiKaq/edOO/pPMaY49WpEQPpTz6aHi6XR5osQYa4HLX2q
+                        clOKlFLUgeq92FuuhczE9t3a9lCjlOxjgdLT2p+LE+0rP4Sr3xOVnMzSFhRia/gY
+                        l2NgZPcqJdMG1O1rl8nm1SSQEGvDHF97+mylaRi4yudfDVfKTPu0Y3spCjN8n8YB
+                        gSkNf8c4cl34zDJzH5fXQarnSr36sVrWsxzgM+EjGQaeOd+Hr1/v
+                        -----END RSA PRIVATE KEY-----
+encrypt:
+  key: 123@89#@!99df
