@@ -13,6 +13,7 @@ spring:
           ignore-local-ssh-settings: true
           clone-on-start: true
           force-pull: true
+          ## 使用此命令生成并配置public key到github或者gitlab中 ssh-keygen -m PEM -f ./id_rsa
           private-key: |
                         -----BEGIN RSA PRIVATE KEY-----
                         MIIG4wIBAAKCAYEAq8PmIjzlOKFfTow7Jp4rdiT8WkUOmkSyRiT+D9FHm3lej/8l
@@ -59,5 +60,6 @@ spring:
     user:
       name: user
       password: dddd
+# 配置加密的key，解密已经加密的配置内容，对配置文件中{cipher}开头的解密，没有标记的则直接按照原文本返回
 encrypt:
   key: 123@89#@!99df
