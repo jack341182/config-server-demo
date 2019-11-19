@@ -55,6 +55,7 @@ spring:
                         gSkNf8c4cl34zDJzH5fXQarnSr36sVrWsxzgM+EjGQaeOd+Hr1/v
                         -----END RSA PRIVATE KEY-----
 
+          search-paths: dev
   # 用于客户端验证保证配置安全
   security:
     user:
